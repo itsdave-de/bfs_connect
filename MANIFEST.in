@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bfs_connect *.css
+recursive-include bfs_connect *.csv
+recursive-include bfs_connect *.html
+recursive-include bfs_connect *.ico
+recursive-include bfs_connect *.js
+recursive-include bfs_connect *.json
+recursive-include bfs_connect *.md
+recursive-include bfs_connect *.png
+recursive-include bfs_connect *.py
+recursive-include bfs_connect *.svg
+recursive-include bfs_connect *.txt
+recursive-exclude bfs_connect *.pyc
