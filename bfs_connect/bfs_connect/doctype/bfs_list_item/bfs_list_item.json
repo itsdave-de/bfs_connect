@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BFSLI-.#####",
+ "creation": "2023-06-20 08:16:49.362940",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "verband_nr",
+  "mitglied_nr",
+  "lieferanten_nr",
+  "as_kunden_kurztext",
+  "belegnummer",
+  "belegdatum",
+  "erfassungsdatum",
+  "faelligkeitsdatum",
+  "erstelldatum",
+  "waehrungs_kz",
+  "rechnungsbetrag",
+  "sofortabzug_prozent",
+  "sofortabzug_betrag",
+  "sk_prozentsatz",
+  "sk_betrag",
+  "zahl_betrag",
+  "mwst_satz",
+  "mwst_betrag",
+  "supplier",
+  "purchase_invoice",
+  "hibiscus_connect_transaction",
+  "status",
+  "output"
+ ],
+ "fields": [
+  {
+   "fieldname": "verband_nr",
+   "fieldtype": "Int",
+   "label": "Verband Nr"
+  },
+  {
+   "fieldname": "mitglied_nr",
+   "fieldtype": "Int",
+   "label": "Mitglied Nr"
+  },
+  {
+   "fieldname": "lieferanten_nr",
+   "fieldtype": "Data",
+   "label": "Lieferanten Nr"
+  },
+  {
+   "fieldname": "as_kunden_kurztext",
+   "fieldtype": "Data",
+   "label": "AS Kunden Kurztext"
+  },
+  {
+   "fieldname": "belegnummer",
+   "fieldtype": "Data",
+   "label": "Belegnummer"
+  },
+  {
+   "fieldname": "belegdatum",
+   "fieldtype": "Date",
+   "label": "Belegdatum"
+  },
+  {
+   "fieldname": "erstelldatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Erstelldatum"
+  },
+  {
+   "fieldname": "waehrungs_kz",
+   "fieldtype": "Data",
+   "label": "Waehrungs KZ"
+  },
+  {
+   "fieldname": "rechnungsbetrag",
+   "fieldtype": "Currency",
+   "label": "Rechnungsbetrag"
+  },
+  {
+   "fieldname": "sofortabzug_prozent",
+   "fieldtype": "Float",
+   "label": "Sofortabzug Prozent"
+  },
+  {
+   "fieldname": "sofortabzug_betrag",
+   "fieldtype": "Data",
+   "label": "Sofortabzug Betrag"
+  },
+  {
+   "fieldname": "sk_prozentsatz",
+   "fieldtype": "Float",
+   "label": "SK Prozentsatz"
+  },
+  {
+   "fieldname": "sk_betrag",
+   "fieldtype": "Float",
+   "label": "SK Betrag"
+  },
+  {
+   "fieldname": "zahl_betrag",
+   "fieldtype": "Float",
+   "label": "Zahl Betrag"
+  },
+  {
+   "fieldname": "mwst_satz",
+   "fieldtype": "Float",
+   "label": "MWST Satz"
+  },
+  {
+   "fieldname": "mwst_betrag",
+   "fieldtype": "Float",
+   "label": "MWST Betrag"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "hibiscus_connect_transaction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hibiscus Connect Transaction",
+   "options": "Hibiscus Connect Transaction"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "new\ncomplete\nerror"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Long Text",
+   "label": "Output"
+  },
+  {
+   "fieldname": "erfassungsdatum",
+   "fieldtype": "Date",
+   "label": "Erfassungsdatum"
+  },
+  {
+   "fieldname": "faelligkeitsdatum",
+   "fieldtype": "Date",
+   "label": "Faelligkeitsdatum"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-22 07:09:36.333778",
+ "modified_by": "Administrator",
+ "module": "BFS Connect",
+ "name": "BFS List Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BFSL-.#####",
+ "creation": "2023-06-19 13:18:09.785577",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "file",
+  "read",
+  "status",
+  "sum",
+  "hib_con_trans",
+  "output",
+  "erstelldatum",
+  "write_mt_940",
+  "attached_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File"
+  },
+  {
+   "fieldname": "read",
+   "fieldtype": "Button",
+   "label": "Read",
+   "options": "do_import"
+  },
+  {
+   "fieldname": "sum",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Sum",
+   "precision": "2"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "new\ncomplete\nincomplete"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Long Text",
+   "label": "Output"
+  },
+  {
+   "fieldname": "hib_con_trans",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hibiscus Connect Transaction",
+   "options": "Hibiscus Connect Transaction"
+  },
+  {
+   "fieldname": "erstelldatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Erstelldatum Avis"
+  },
+  {
+   "fieldname": "write_mt_940",
+   "fieldtype": "Button",
+   "label": "Write Export Data",
+   "options": "get_mt940_file"
+  },
+  {
+   "fieldname": "attached_file",
+   "fieldtype": "Link",
+   "label": "Attached Mt940 File",
+   "options": "File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 09:33:25.321415",
+ "modified_by": "Administrator",
+ "module": "BFS Connect",
+ "name": "BFS List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
