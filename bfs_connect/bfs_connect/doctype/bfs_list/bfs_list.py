@@ -67,12 +67,12 @@ class BFSList(Document):
 			nr = row["BELEGNUMMER"]
 			supplier = self.get_supplier(id, sup)
 			if not supplier:
-				output += "Die BFS Suplier ID " + str(id) +" wurde noch nicht dem Supplier " + sup + " zugeordnet\n" 
+				output += "Die BFS Suplier ID " + str(id) +" wurde noch nicht dem Supplier " + str(sup) + " zugeordnet\n" 
 				p_i = ""
 			else:
 				p_i = self.get_purchase_invoice(supplier, nr)
 				if not p_i:
-					output += "Es existiert keine Purchase Invoice mit der Supplier Invoice Number " + nr +"\n"
+					output += "Es existiert keine Purchase Invoice mit der Supplier Invoice Number " + str(nr) +"\n"
 
 			count += 1
 			item_doc = frappe.get_doc({
